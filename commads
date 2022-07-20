@@ -3,4 +3,7 @@ ls -lrt | grep ^- | awk 'END{print $NF}'
 count occurence od word 
 awk '{for(i=1;i<=NF;i++)a[$i]++;}END{for(i in a){print i,a[i];}}' animal
 
+total count of the word
+find . -name *.txt -exec grep -c Linux '{}' \; | awk '{x+=$0;}END{print x}'
+
 
